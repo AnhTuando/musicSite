@@ -1,0 +1,434 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100%;
+}
+.wrap {
+    position: relative;
+    display: flex;
+    height:100%;
+}
+
+.none {
+    display: none;
+}
+.pink {
+    color: pink;
+}
+.active {
+    opacity: 1;
+}
+
+
+/*                     WRAP 1                      */
+
+
+.wrap_1 {
+    position:relative;
+    width: 20%;
+    padding: 20px 30px;
+    background: rgb(0, 0, 0);
+}
+.wrap_1 .logo {
+    height:100px;
+    display: flex;
+}
+.wrap_1 .logo img {
+    width: 80px
+}
+.wrap_1 .logo a{
+    line-height:100px;
+    font-size:30px;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+.wrap_1 .interact {
+    margin-top:20px;
+} 
+.wrap_1 .interact .interact_list_1,.wrap_1 .interact .interact_list_2 {
+    margin-top: 60px;
+}
+.wrap_1 .interact .interact_list_1 li,
+.wrap_1 .interact .interact_list_2 li {
+    list-style: none;
+    margin:20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+.wrap_1 .interact .interact_list_1 li i,
+.wrap_1 .interact .interact_list_2 li i {
+    margin: 0px 20px;
+}
+
+.wrap_1 .line {
+    margin: 30px 0px;
+    height:1px;
+    width:100%;
+    background-color: rgb(99, 99, 99)
+}
+.wrap .playlist {
+    height:200px;
+    color: #fff;
+    opacity: 0.7;
+
+}
+.wrap .playlist a {
+    color: #fff;;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left:25%;
+}
+.wrap_1 .install  {
+    color: rgb(255, 255, 255);
+    padding-left:15%;
+    position:fixed;
+    bottom:150px;
+    left:-200px;
+    font-size:20px;
+    opacity: 0.7;
+}
+.wrap_1 .install i {
+   padding:10px;
+
+}
+
+.wrap_1 .interact .interact_list_1 li:hover,
+.wrap_1 .install:hover,
+.wrap .playlist {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/*                         WRAP 2              */
+
+
+.wrap_2 {
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(55, 55, 55)
+}
+.wrap .wrap_2 .navigation {
+    display: flex;
+    height:50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.navigation .btn_action  {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+}
+.btn_action button {
+    padding: 10px;
+    margin:0px 10px;
+    line-height: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size:20px;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    opacity: 0.7;
+}
+.navigation .upgrade {
+    font-size:20px;
+    padding:10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius:20px;
+    border: none;
+    background-color: #000;
+    opacity: 0.7;
+    border: 1px solid #fff;
+}
+
+.wrap_2 .navigation .user {
+    margin-right: 100px;
+    background-color: #000;
+    border-radius:24px ;
+    width: 200px;
+    color: white;
+    height:50px;
+    position: relative;
+    opacity: 0.7;
+
+}
+.wrap_2 .navigation .user span {
+    line-height:50px;
+    position:absolute;
+    padding:0px 20px
+}
+.wrap_2 .navigation .user img {
+    height: 100%;
+    border-radius:50% ;
+}
+.btn_action button:hover,
+.wrap_2 .navigation .user:hover,
+.navigation .upgrade:hover {
+    opacity:1;
+    cursor: pointer;
+}
+.user .sub_nav {
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    width:250px;
+    height:200px;
+    padding:10px;
+    display: none;
+    
+}
+.user .sub_nav li {
+    list-style: none;
+    margin:20px 0px  20px 30px;
+    opacity: 0.7;
+    
+}
+.user .sub_nav li i {
+    margin: 0px 10px
+}
+.sub_nav li a {
+    color:#fff;
+}
+.wrap_2 .navigation .user:hover .sub_nav {
+    display:block
+}
+.wrap_2 .navigation .sub_nav li:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.recently {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.recently .title {
+    font-size:25px;
+    text-transform:uppercase;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.recently .song_obj {
+    width:250px;
+    height:300px;
+    padding:10px;
+    background-color: rgb(27, 26, 26);
+    border-radius:20px;
+    position: relative;
+    opacity: 0.7;
+}
+.recently .song_obj .img{
+    margin-top: 10px;
+    border-radius:10px;
+    height:220px;
+    width:200px;
+    margin-left: 15px;
+    background: url(/authors/LanNha.jpg) center/cover no-repeat ;
+}
+.all_songs .song_obj .play_btn,
+.recently .song_obj .play_btn {
+    font-size: 20px;
+    padding:25px;
+    position: absolute;
+    background-color: rgb(57, 179, 93);
+    border-radius: 50%;
+    top: 150px;
+    right:25px
+}
+.song_obj .description {
+    color: #fff;
+    margin-top:10px;
+    padding-left:15px;
+}
+.song_obj .description .author {
+    color: rgb(163, 163, 163);
+    margin-top:5px
+}
+.all_songs .songs:hover,
+.all_songs .songs .song_obj:hover,
+.recently .song_obj:hover {
+    opacity: 1;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.all_songs .title {
+    font-size:25px;
+    text-transform:uppercase;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.all_songs {
+    padding-left: 60px;
+    padding-top: 40px;
+    height:100%;
+    width: 100%;
+
+}
+.all_songs .songs {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.all_songs .songs .song_obj .img {
+    height: 220px;
+    width: 200px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.all_songs .songs .song_obj {
+    width:250px;
+    height:300px;
+    padding:10px;
+    background-color: rgb(27, 26, 26);
+    border-radius:20px;
+    position: relative;
+    opacity: 0.7;
+    margin:0 10px 20px 10px
+}
+
+
+.display {
+    background-color:#121212 ;
+    width:100%;
+    height:100px;
+    position:fixed;
+    bottom:0;
+    display:flex;
+    justify-content:space-between
+}
+.display .current_song {
+    height: 100px;
+    width:200px;
+    margin-top: 25px;
+    margin-left:20px;
+    display: flex;
+    color: #fff;
+}
+.display .current_song .img {
+    background: url(/authors/PhongMax.jpg) center/cover no-repeat;
+    width:60px;
+    height:60px;
+}
+.display .current_song .song_description {
+    margin-left:20px
+}
+.display .current_song .song_description .name{
+    font-weight:bold;
+}
+.display .current_song .song_description .author {
+    color: rgb(163, 163, 163);
+margin-top: 10px;
+}
+
+
+
+
+.display_control {
+    width: 650px;
+    margin-left: 100px
+}
+.display_control .control {
+    margin-top:10px;
+    margin-left:180px
+}
+
+.control .shuffle,
+.control .prev,
+.control .play,
+.control .pause,
+.control .next,
+.control .repeat {
+    font-size: 25px;
+    padding: 5px 8px;
+    margin: 0px 8px;
+    border-radius:5px;
+    color: #fff;
+    border:none;
+    background-color:#121212;
+    opacity: 0.7;
+}
+
+.control .shuffle {
+    
+}
+
+
+
+.control .shuffle:hover,
+.control .prev:hover,
+.control .play:hover,
+.control .pause:hover,
+.control .next:hover,
+.control .repeat:hover,
+.volume .off_volume:hover,
+.volume .on_volume:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.display_control .progress {
+    width: 100%;
+    height:6px;
+    outline:none;
+}
+.display_control input:hover {
+    cursor: pointer;
+}
+
+.volume {
+    width: 300px;
+    margin-top:10px;
+    margin-right:80px;
+    display: flex;
+}
+
+.volume .off_volume,
+.volume .on_volume {
+    font-size: 25px;
+    padding: 5px 8px;
+    margin: 0px 8px;
+    border-radius:5px;
+    color: #fff;
+    border:none;
+    background-color:#121212;
+    opacity: 0.7;
+    margin-top: 8px;
+}
+.volume .off_volume {
+    display: none;
+}
+.volume .volume_control {
+    width: 100%;
+    height:6px;
+    outline:none;
+    margin-top: 45px;
+}
